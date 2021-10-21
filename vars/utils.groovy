@@ -12,6 +12,7 @@ def checkString() {
   def text = readFile file: "index.html"
   if(text.contain("${BUILD_NUMBER}")) {
     echo "IT IS THERE"
-    else {
+  }
+  else {
       echo "NOT THERE"
     }
